@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <title>Mario Bros</title>
+</head>
+
+<body>
+    <div class="mascara-formulario" onclick="ocultarForm()"></div>
+
+    <div class="header">
+        <img src="./img/logo-header.png" alt="logo Mario">
+        <div class="menu-links">
+            <a onclick="mostrarHome()">Home</a>
+            <a onclick="mostrarServicos()">Nossos Serviços</a>
+            <a onclick="mostrarForm()">Fale Conosco</a>
+        </div>
+    </div>
+
+    <div class="caixa-mae" id="sec-home">
+        <div class="caixa-principal">
+            <img src="./img/logo.png" alt="logo do Mario Bros" class="logo-mario">
+            <p>Encanadores Mario & Luigi - Resolvendo Seus Problemas Hidráulicos Com Estilo!</p>
+            <p>Você já se encontrou em uma situação de emergência com encanamento? Vazamentos inesperados, canos entupidos ou torneiras que não param de pingar? Não se preocupe, porque estamos aqui para salvar o dia! Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!</p>
+            <button onclick="mostrarForm()">Entre em contato</button>
+        </div>
+
+        <div class="caixa-imagem">
+            <img src="./img/mario.png" alt="logo Mario e Luigi" class="imagem-mario-luigi">
+        </div>
+    </div>
+
+    <div class="caixa-mae-servicos" id="sec-servicos" style="display: none;">
+        <h1 class="titulo-servicos">O que nós fazemos</h1>
+        
+        <div class="container-servicos">
+            <div class="card-servico">
+                <h2>Desentupimento</h2>
+                <p>Nossos tubos verdes nunca entopem, mas os seus sim! Resolvemos problemas de canos entupidos rápido e sem sujeira.</p>
+            </div>
+
+            <div class="card-servico">
+                <h2>Caça-Vazamentos</h2>
+                <p>A princesa Peach não gosta de castelos inundados. Encontramos e consertamos qualquer vazamento na sua casa.</p>
+            </div>
+
+            <div class="card-servico">
+                <h2>Instalações Novas</h2>
+                <p>Do Reino dos Cogumelos direto para sua casa. Instalação de pias, torneiras e tubulações completas.</p>
+            </div>
+        </div>
+
+        <button onclick="mostrarForm()">Solicitar Orçamento</button>
+    </div>
+
+    <div class="caixa-video">
+        <video src="./video/video.mp4" autoplay muted loop></video>
+        <div class="mascara"></div>
+    </div>
+
+    <a href="https://wa.me/5555555555555?text=Ol%C3%A1%2C%20quero%20ajuda%20dos%20irm%C3%A3os%20Mario!" class="link-whatsapp" target="_blank">
+        <img src="./img/whatsapp.png" alt="botão whatsapp">
+    </a>
+
+    <form class="formulario-fale-conosco" action="https://formcarry.com/s/7sb5KvqX5wh" method="POST" enctype="multipart/form-data">
+        <input placeholder="Seu nome" type="text" name="nome" required>
+        <input placeholder="Seu telefone" type="tel" name="telefone" required>
+        <textarea placeholder="Digite seu problema aqui" name="duvida" required></textarea>
+        <button type="submit">Pedir orçamento</button>
+    </form>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
